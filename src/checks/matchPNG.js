@@ -1,8 +1,8 @@
 const fs = require('fs');
 const PNG = require('pngjs').PNG;
 const pixelmatch = require('pixelmatch');
-const MatchSnapshotOff = false
-const screenDir ="match_screen/"
+const conf= require("../../matchConf.json")
+const screenDir =conf.screenDir
 
 exports.screenFolder =screenFolder;
 async function screenFolder () {
@@ -18,7 +18,7 @@ async function toMatchSnapshot( name, rectangle) {
     if (rectangle === undefined) {
         rectangle = [{start: {x: 1, y: 1}, end: {x: 1, y: 1}}]
     }
-    if (MatchSnapshotOff === false) {
+    if (conf.MatchSnapshotOff === false) {
         let browserName = browser.capabilities.browserName
         const pathCurrent = screenDir + name + '_' + browserName + '.new.png';
         const pathStandard = screenDir + name + '_' + browserName + '.old.png'

@@ -17,5 +17,6 @@ class DocsPage extends BasePage {
 
  get docsBtn(){ return $('.//div[@class="navbar__items"]/a[@href="/docs/gettingstarted"]')}
  get listMenu ( ){return $$(".//ul[@class='theme-doc-sidebar-menu menu__list']/li/a")}
+ get listMenuSubItems (){return $$(".//ul[@class='theme-doc-sidebar-menu menu__list']/li/ul/li")}
 }
 module.exports= new DocsPage()

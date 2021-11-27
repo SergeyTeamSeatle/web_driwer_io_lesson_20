@@ -1,0 +1,108 @@
+{
+  "Introduction": [
+    "What is Webdriver.IO?",
+    "Getting Started",
+    "Boilerplate Projects"
+  ],
+  "Core Concepts": [
+    "Setup Types",
+    "Sync vs. Async Mode",
+    "Automation Protocols",
+    "Multiremote",
+    "Auto-waiting"
+  ],
+  "Configuration": [
+    "Options",
+    "Babel Setup",
+    "TypeScript Setup",
+    "Proxy Setup",
+    "Driver Binaries"
+  ],
+  "Guides": [
+    "Selectors",
+    "Timeouts",
+    "The Browser Object",
+    "Mocks and Spies",
+    "Custom Commands",
+    "Page Object Pattern",
+    "Debugging",
+    "REPL interface"
+  ],
+  "Testrunner": [
+    "WDIO CLI Options",
+    "Testrunner Configuration",
+    "Frameworks",
+    "Assertion",
+    "Organizing Test Suite",
+    "Retry Flaky Tests",
+    "Watch Test Files",
+    "Custom Reporter",
+    "Custom Services"
+  ],
+  "Migrate": [
+    "From v5 to v6",
+    "From v6 to v7",
+    "From Protractor",
+    "From Sync to Async"
+  ],
+  "Integration": [
+    "Using Cloud Services",
+    "Autocompletion",
+    "Docker",
+    "Github Actions",
+    "Jenkins",
+    "Bamboo"
+  ],
+  "Reporter": [
+    "Allure Reporter",
+    "Concise Reporter",
+    "Dot Reporter",
+    "Junit Reporter",
+    "Spec Reporter",
+    "Sumologic Reporter",
+    "Report Portal Reporter",
+    "Video Reporter",
+    "HTML Reporter",
+    "JSON Reporter",
+    "Mochawesome Reporter",
+    "Timeline Reporter",
+    "CucumberJS JSON Reporter",
+    "Markdown Reporter",
+    "Delta Reporter Reporter"
+  ],
+  "Services": [
+    "Appium Service",
+    "Browserstack Service",
+    "Crossbrowsertesting Service",
+    "Devtools Service",
+    "Firefox Profile Service",
+    "Sauce Service",
+    "Selenium Standalone Service",
+    "Shared Store Service",
+    "Static Server Service",
+    "Testingbot Service",
+    "Webdriver Mock Service",
+    "ChromeDriver Service",
+    "Intercept Service",
+    "Zafira Listener Service",
+    "Report Portal Service",
+    "Docker Service",
+    "UI5 Service",
+    "WireMock Service",
+    "Slack Service",
+    "LambdaTest Service",
+    "Image Comparison (Visual Regression Testing) Service",
+    "Ng-apimock Service",
+    "Novus Visual Regression Service",
+    "Re-run Service",
+    "winappdriver Service",
+    "ywinappdriver Service",
+    "PerformanceTotal Service",
+    "CleanupTotal Service",
+    "AWS Device Farm Service",
+    "OCR service for Appium Native Apps Service",
+    "Library of useful expected conditions Service",
+    "Auto-detect missing imports w/eslint Service",
+    "Microsoft Teams Service"
+  ]
+}

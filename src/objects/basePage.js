@@ -22,7 +22,6 @@ class BasePage {
     }
 
     async getMenu(list) {
-
         let listName = []
         for (let item = 0; item < list.length; item++) {
             listName.push(await list[item].getText())
@@ -30,9 +29,33 @@ class BasePage {
         return listName
     }
 
+
+
+    async getSubMenu(name) {
+        let button =await $(".//ul[@class='theme-doc-sidebar-menu menu__list']/li/a[.='"+name+"']")
+        if (name!=="Introduction"){
+        await button.click()}
+        let list = await $$(".//a[.='"+name+"']//parent::*/ul/li")
+        let listName = []
+        for (let item = 0; item < list.length; item++) {
+            await list[item].isClickable()
+                listName.push(await list[item].getText())
+        }
+        await button.click()
+        return listName
+    }
+
+
+    async openAllMenu(list) {
+        for (let item = 0; item < list.length; item++) {
+            await list[item].click()
+        }
+       }
+
     async matchScreen(name, rectangle) {
         return await matchPNG.toMatchSnapshot(name, rectangle)
     }
+
 
 
 }
